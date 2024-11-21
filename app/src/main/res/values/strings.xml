@@ -7,6 +7,11 @@
 
     <!-- Team Selection -->
     <string name="start">Start</string>
-    <string name="room_ID_placeholder" translatable="false">999112</string>
-    <string name="list_of_strings_placeholder" translatable="false">Alpha Beta Gamma Delta</string>
+    <string name="placeholder_room_ID" translatable="false">999112</string>
+    <string name="button_add_team">Add team</string>
+    <string name="placeholder_team_name" translatable="false">Team 1</string>
+
+    <!-- Accessiblity -->
+    <string name="description_edit_pencil">Edit</string>
+    <string name="description_delete">Delete</string>
 </resources>
