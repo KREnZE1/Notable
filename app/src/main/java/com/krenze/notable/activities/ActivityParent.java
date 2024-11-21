@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public abstract class ParentActivity extends AppCompatActivity {
+public abstract class ActivityParent extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
