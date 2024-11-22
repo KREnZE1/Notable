@@ -2,8 +2,10 @@
     <string name="app_name">Notable</string>
 
     <!-- Startpage -->
-    <string name="host">Host</string>
-    <string name="join">Join</string>
+    <string name="button_host">Host</string>
+    <string name="button_join">Join</string>
+
+    <string name="text_input_hint">Input code</string>
 
     <!-- Team Selection -->
     <string name="start">Start</string>

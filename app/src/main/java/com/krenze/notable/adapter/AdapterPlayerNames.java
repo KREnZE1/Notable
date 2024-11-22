@@ -28,14 +28,18 @@ public class AdapterPlayerNames extends RecyclerView.Adapter<AdapterPlayerNames.
     }
 
     ArrayList<String> player_names;
-    public AdapterPlayerNames(ArrayList<String> players) {
-        player_names = players;
+    public AdapterPlayerNames() {
+        player_names = new ArrayList<>();
+    }
+
+    public void addPlayerName(String name) {
+        player_names.add(name);
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_player, parent));
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_player, parent, false));
     }
 
     @Override

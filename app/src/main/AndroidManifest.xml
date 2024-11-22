@@ -13,17 +13,21 @@
         android:theme="@style/Theme.Notable"
         tools:targetApi="31">
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.ActivityStart"
             android:exported="true"
             android:theme="@style/Theme.Notable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.HostTeamSelection"
+            android:name=".activities.ActivityHostSession"
+            android:exported="true"
+            android:theme="@style/Theme.Notable"
+            />
+        <activity
+            android:name=".activities.ActivityJoinSession"
             android:exported="true"
             android:theme="@style/Theme.Notable"
             />

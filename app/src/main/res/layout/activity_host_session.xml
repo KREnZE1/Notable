@@ -17,18 +17,16 @@
 
     </LinearLayout>
 
-    <GridLayout
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/container_teams"
-        android:columnCount="2"
+        android:id="@+id/container_recycler"
 
         app:layout_constraintTop_toBottomOf="@id/container_misc"
         app:layout_constraintBottom_toTopOf="@id/button_add_team"
-        >
-
-
-    </GridLayout>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -36,8 +34,20 @@
         android:id="@+id/button_add_team"
         android:text="@string/button_add_team"
 
-        app:layout_constraintTop_toBottomOf=""
+        app:layout_constraintTop_toBottomOf="@id/container_recycler"
+        app:layout_constraintBottom_toTopOf="@id/button_temp_add_player"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_temp_add_player"
+        android:text="Add Player"
+
+        app:layout_constraintTop_toBottomOf="@id/button_add_team"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
